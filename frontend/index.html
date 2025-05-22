@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển Anh - Việt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Từ điển Anh - Việt</h1>
+
+        <input type="text" id="searchInput" placeholder="Nhập từ tiếng Anh..." oninput="showSuggestions()" autocomplete="off">
+        <ul id="suggestList"></ul>
+        <button onclick="searchWord()">Tra cứu</button>
+        <div id="result"></div>
+
+        <hr>
+
+        <h2>➕ Thêm từ</h2>
+        <input type="text" id="newWord" placeholder="Từ tiếng Anh">
+        <input type="text" id="newMeaning" placeholder="Nghĩa tiếng Việt">
+        <button onclick="addWord()">Thêm từ</button>
+
+        <h2>🗑️ Xóa từ</h2>
+        <input type="text" id="deleteInput" placeholder="Từ cần xoá">
+        <button onclick="deleteWord()">Xoá từ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
